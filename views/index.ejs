@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%- site.businessName %> — Trusted Legal Counsel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <%- include('partials/header') %>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Trusted Legal Counsel</span>
+      <h1>Expert legal advice you can <em>rely on</em></h1>
+      <p><%- site.businessName %> provides clear, practical legal guidance to individuals and businesses. We take the complexity out of the law so you can move forward with confidence.</p>
+      <div class="hero-cta">
+        <a href="/contact" class="btn-primary">Book a consultation</a>
+        <a href="#services" class="btn-outline">Our services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-image"><span>Image placeholder</span></div>
+      <div class="about-content">
+        <span class="section-label">About us</span>
+        <h2>A firm built on trust and expertise</h2>
+        <p><%- site.businessName %> has been serving clients with dedication and integrity for over two decades. Our team of experienced solicitors brings deep knowledge across a broad range of practice areas.</p>
+        <p>We believe the law should work for you — not the other way around. That's why we take the time to understand your situation and provide advice that is clear, honest, and effective.</p>
+        <div class="about-stats">
+          <div>
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Years of experience</span>
+          </div>
+          <div>
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Clients served</span>
+          </div>
+          <div>
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Client satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <div class="section-header">
+        <span class="section-label">What we do</span>
+        <h2>Our practice areas</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+          </div>
+          <h3>Property Law</h3>
+          <p>Conveyancing, property transactions, leases, and disputes handled with precision and care.</p>
+          <a href="/contact" class="service-link">Learn more</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          </div>
+          <h3>Business Law</h3>
+          <p>Company formation, commercial contracts, mergers, and ongoing business legal support.</p>
+          <a href="/contact" class="service-link">Learn more</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Family Law</h3>
+          <p>Separation, divorce, custody, and family agreements managed with sensitivity and clarity.</p>
+          <a href="/contact" class="service-link">Learn more</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Wills &amp; Estates</h3>
+          <p>Wills, trusts, powers of attorney, and estate administration to protect what matters most.</p>
+          <a href="/contact" class="service-link">Learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

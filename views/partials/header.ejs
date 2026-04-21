@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="header-inner">
+
+    <div class="logo-circle" href="/">
+      <!-- Replace with: <img src="/images/logo.png" alt="BCG Law logo"> -->
+      Logo
+    </div>
+
+    <a class="site-title" href="/"><%- site.businessName %></a>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/#about"  <%= page === 'home'    ? 'class="active"' : '' %>>About us</a></li>
+        <li><a href="/#services" <%= page === 'home'  ? 'class="active"' : '' %>>Services</a></li>
+        <li><a href="/contact" <%= page === 'contact' ? 'class="active"' : '' %>>Contact</a></li>
+        <li><a href="/fees"    <%= page === 'fees'    ? 'class="active"' : '' %>>Fees</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-phone" href="tel:<%- site.phoneTel %>">Ph: <%- site.phone %></a>
+
+  </div>
+</header>
