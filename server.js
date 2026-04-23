@@ -34,8 +34,6 @@ const site = {
   phone:        '0800 83 83 83',
   phoneTel:     '0800838383',
   email:        'info@bcglaw.co.nz',
-  address:      '123 Legal Street, Auckland CBD, 1010',
-  suburb:       'Auckland CBD',
   year:         new Date().getFullYear()
 };
 
@@ -53,6 +51,14 @@ app.get('/contact', (req, res) => {
   res.render('contact', { site, page: 'contact' });
 });
 
+app.get('/about', (req, res) => {
+  res.render('about', { site, page: 'about' });
+});
+
+app.get('/services/boilerplate', (req, res) => {
+  res.render('services/boilerplate', { site, page: 'boilerplate' });
+});
+
 // Add more pages as you build them:
 // app.get('/about',    (req, res) => res.render('about',    { site, page: 'about' }));
 // app.get('/services', (req, res) => res.render('services', { site, page: 'services' }));
@@ -62,11 +68,12 @@ app.get('/contact', (req, res) => {
    CONTACT FORM — POST /contact
 ============================================ */
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: "smtp.gmail.com",
+  port: 587,
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-  }
+    pass: process.env.EMAIL_PASS,
+  },
 });
 
 app.post('/contact', async (req, res) => {

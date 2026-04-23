@@ -1,0 +1,51 @@
+<div class="contact-form">
+    <div id="form-success" class="form-message form-message--success" style="display:none;">
+    Thank you! Your message has been sent. We will be in touch shortly.
+    </div>
+    <div id="form-error" class="form-message form-message--error" style="display:none;">
+    Something went wrong. Please try again or call us directly.
+    </div>
+
+    <form id="contact-form" novalidate>
+    <div class="form-row">
+        <div class="form-group">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname" placeholder="Smith" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="021 123 4567">
+    </div>
+    <div class="form-group">
+        <label for="service">Area of enquiry</label>
+        <select id="service" name="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option>Unfair Dismissal</option>
+        <option>Disciplinary Meeting</option>
+        <option>90 Day Trial Dismissal</option>
+        <option>Redundancy</option>
+        <option>Workplace Bullying</option>
+        <option>Sexual Harrasment</option>
+        <option>Medical Termination</option>
+        <option>Unpaid Wages</option>
+        <option>Migrant Exploitation</option>
+        <option>Personal Greivance</option>
+        <option>Exit Packages</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Describe your situation..." required></textarea>
+    </div>
+    <button type="submit" class="form-submit" id="form-btn">Send enquiry</button>
+    </form>
+</div>

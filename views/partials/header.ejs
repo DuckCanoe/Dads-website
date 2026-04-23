@@ -10,10 +10,29 @@
 
     <nav class="header-nav">
       <ul>
-        <li><a href="/#about"  <%= page === 'home'    ? 'class="active"' : '' %>>About us</a></li>
-        <li><a href="/#services" <%= page === 'home'  ? 'class="active"' : '' %>>Services</a></li>
+        <li><a href="/about" <%= page === 'home' ? 'class="active"' : '' %>>About us</a></li>
+
+        <li class="nav-item nav-item--dropdown">
+          <a href="/services" <%= page === 'services' ? 'class="active"' : '' %>>Services</a>
+          <ul class="dropdown">
+            <li><a href="/services/unfair-dismissal">Unfair Dismissal</a></li>
+            <li><a href="/services/disciplinary-meeting">Disciplinary Meeting</a></li>
+            <li><a href="/services/90-day-trial-dismissal">90 Day Trial Dismissal</a></li>
+            <li><a href="/services/redundancy">Redundancy</a></li>
+            <li><a href="/services/workplace-bullying">Workplace Bullying</a></li>
+            <li><a href="/services/sexual-harrasment">Sexual Harrasment</a></li>
+            <li><a href="/services/medical-termination">Medical Termination</a></li>
+            <li><a href="/services/unpaid-wages">Unpaid Wages</a></li>
+            <li><a href="/services/migrant-exploitation">Migrant Exploitation</a></li>
+            <li><a href="/services/personal-greivance">Personal Greivance</a></li>
+            <li><a href="/services/exit-packages">Exit Packages</a></li>
+            <li><a href="/services/boilerplate">Boilerplate</a></li>
+          </ul>
+        </li>
+
         <li><a href="/contact" <%= page === 'contact' ? 'class="active"' : '' %>>Contact</a></li>
-        <li><a href="/fees"    <%= page === 'fees'    ? 'class="active"' : '' %>>Fees</a></li>
+        <li><a href="/fees" <%= page === 'fees' ? 'class="active"' : '' %>>Fees</a></li>
+        <li><a href="/blog" <%= page === 'blog' ? 'class="active"' : '' %>>Blog</a></li>
       </ul>
     </nav>
 
