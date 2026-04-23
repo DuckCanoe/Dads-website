@@ -8,12 +8,22 @@
 
     <a class="site-title" href="/"><%- site.businessName %></a>
 
-    <nav class="header-nav">
+    <!-- Hamburger button (mobile only) -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header-nav" id="header-nav">
       <ul>
         <li><a href="/about" <%= page === 'home' ? 'class="active"' : '' %>>About us</a></li>
 
         <li class="nav-item nav-item--dropdown">
           <a href="/services" <%= page === 'services' ? 'class="active"' : '' %>>Services</a>
+          <button class="dropdown-toggle" aria-label="Toggle services menu">
+            <span></span>
+          </button>
           <ul class="dropdown">
             <li><a href="/services/unfair-dismissal">Unfair Dismissal</a></li>
             <li><a href="/services/disciplinary-meeting">Disciplinary Meeting</a></li>
@@ -33,6 +43,11 @@
         <li><a href="/contact" <%= page === 'contact' ? 'class="active"' : '' %>>Contact</a></li>
         <li><a href="/fees" <%= page === 'fees' ? 'class="active"' : '' %>>Fees</a></li>
         <li><a href="/blog" <%= page === 'blog' ? 'class="active"' : '' %>>Blog</a></li>
+
+        <!-- Phone number shown in mobile menu -->
+        <li class="nav-phone-mobile">
+          <a href="tel:<%- site.phoneTel %>">Ph: <%- site.phone %></a>
+        </li>
       </ul>
     </nav>
 
