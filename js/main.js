@@ -102,3 +102,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* --- Mobile nav toggle --- */
+const navToggle = document.getElementById('nav-toggle');
+const headerNav = document.getElementById('header-nav');
+
+if (navToggle && headerNav) {
+
+  // Open/close the main menu
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    headerNav.classList.toggle('open');
+  });
+
+  // Open/close the services dropdown on mobile
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  dropdownToggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const dropdown = btn.nextElementSibling;
+      btn.classList.toggle('open');
+      dropdown.classList.toggle('open');
+    });
+  });
+
+  // Close menu when a link is clicked
+  headerNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('open');
+      headerNav.classList.remove('open');
+    });
+  });
+
+}
