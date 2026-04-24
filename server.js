@@ -59,6 +59,10 @@ app.get('/services/boilerplate', (req, res) => {
   res.render('services/boilerplate', { site, page: 'boilerplate' });
 });
 
+app.get('/services/unfair-dismissal', (req, res) => {
+  res.render('services/unfair-dismissal', { site, page: 'unfair-dismissal' });
+});
+
 // Add more pages as you build them:
 // app.get('/about',    (req, res) => res.render('about',    { site, page: 'about' }));
 // app.get('/services', (req, res) => res.render('services', { site, page: 'services' }));

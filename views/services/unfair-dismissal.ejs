@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unfair Dismissal — <%- site.businessName %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/service-page.css">
+</head>
+<body>
+
+  <%- include('../partials/header') %>
+
+  <!-- ============================
+       HERO WITH CONTACT FORM
+  ============================= -->
+  <section class="svc-hero">
+    <div class="svc-hero-inner">
+
+      <div class="svc-hero-content">
+        <span class="hero-tag">Employment Law</span>
+        <h1>Unfair Dismissal</h1>
+        <p>If you've been dismissed from your job and believe it was unjustified, you may have grounds for a personal grievance. We can help you understand your rights and take action.</p>
+        <ul class="svc-hero-bullets">
+          <li>Free initial consultation</li>
+          <li>No win, no fee options available</li>
+          <li>Act within 90 days of dismissal</li>
+        </ul>
+      </div>
+
+      <div class="svc-hero-form">
+        <p class="form-intro">Get free advice today</p>
+        <div id="hero-form-success" class="form-message form-message--success" style="display:none;">
+          Thank you! We will be in touch shortly.
+        </div>
+        <div id="hero-form-error" class="form-message form-message--error" style="display:none;">
+          Something went wrong. Please try again.
+        </div>
+        <form id="hero-contact-form" novalidate>
+          <input type="hidden" name="service" value="Unfair Dismissal">
+          <div class="form-group">
+            <label for="h-fname">First name</label>
+            <input type="text" id="h-fname" name="fname" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="h-email">Email address</label>
+            <input type="email" id="h-email" name="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="h-phone">Phone number</label>
+            <input type="tel" id="h-phone" name="phone" placeholder="021 000 0000">
+          </div>
+          <div class="form-group">
+            <label for="h-message">Briefly describe your situation</label>
+            <textarea id="h-message" name="message" rows="3" placeholder="What happened and when..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="hero-form-btn">Get free advice</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       DEFINING THE ISSUE
+  ============================= -->
+  <section class="svc-section svc-define">
+    <div class="svc-section-inner">
+      <div class="svc-text">
+        <span class="section-label">Understanding the issue</span>
+        <h2>What is unfair dismissal?</h2>
+        <p>An unfair dismissal — or unjustified dismissal — occurs when an employer terminates your employment without a good reason, or without following a fair process. In New Zealand, the Employment Relations Act 2000 protects employees from being dismissed without just cause.</p>
+        <p>Your employer must have a substantive reason for dismissing you — meaning there must be a genuine and serious reason related to your conduct or performance. They must also follow a procedurally fair process, giving you the opportunity to respond to any allegations before a decision is made.</p>
+        <p>If either of these requirements is not met, you may have grounds to raise a personal grievance.</p>
+      </div>
+      <div class="svc-callout">
+        <div class="svc-callout-inner">
+          <span class="callout-label">Important</span>
+          <p>You have <strong>90 days</strong> from the date of your dismissal to raise a personal grievance with your employer. Missing this deadline may prevent you from taking action.</p>
+          <a href="#contact" class="btn-primary">Talk to us today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       HOW WE CAN HELP
+  ============================= -->
+  <section class="svc-section svc-help">
+    <div class="svc-section-inner svc-section-inner--centered">
+      <div class="svc-section-header">
+        <span class="section-label">Our approach</span>
+        <h2>How we can help you</h2>
+        <p>We take the complexity out of employment law so you can focus on moving forward.</p>
+      </div>
+      <div class="svc-help-grid">
+
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3>Case assessment</h3>
+          <p>We review the circumstances of your dismissal and give you an honest assessment of whether you have a strong case.</p>
+        </div>
+
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>Raising a grievance</h3>
+          <p>We help you draft and submit a personal grievance to your employer within the 90 day timeframe.</p>
+        </div>
+
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Mediation support</h3>
+          <p>Most cases are resolved through mediation. We represent and support you throughout the process.</p>
+        </div>
+
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Tribunal representation</h3>
+          <p>If mediation fails, we can represent you at the Employment Relations Authority or Employment Court.</p>
+        </div>
+
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3>Remedies &amp; compensation</h3>
+          <p>We pursue the best possible outcome for you — including lost wages, compensation for humiliation, and reinstatement where appropriate.</p>
+        </div>
+
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 11.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 18z"/></svg>
+          </div>
+          <h3>Ongoing advice</h3>
+          <p>We keep you informed at every stage and are available to answer your questions throughout the process.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       WHAT THE PROCESS LOOKS LIKE
+  ============================= -->
+  <section class="svc-section svc-process">
+    <div class="svc-section-inner svc-section-inner--centered">
+      <div class="svc-section-header">
+        <span class="section-label">Step by step</span>
+        <h2>What the process looks like</h2>
+        <p>Employment disputes can feel overwhelming. Here's what to expect when you work with us.</p>
+      </div>
+      <div class="svc-steps">
+
+        <div class="svc-step">
+          <div class="svc-step-num">01</div>
+          <div class="svc-step-content">
+            <h3>Free consultation</h3>
+            <p>We start with a free, no obligation conversation to understand your situation and advise whether you have a viable case.</p>
+          </div>
+        </div>
+
+        <div class="svc-step">
+          <div class="svc-step-num">02</div>
+          <div class="svc-step-content">
+            <h3>Raise the grievance</h3>
+            <p>We prepare and send a formal personal grievance letter to your employer, clearly setting out the basis of your claim.</p>
+          </div>
+        </div>
+
+        <div class="svc-step">
+          <div class="svc-step-num">03</div>
+          <div class="svc-step-content">
+            <h3>Employer response</h3>
+            <p>Your employer has a chance to respond. We review their position and advise you on next steps.</p>
+          </div>
+        </div>
+
+        <div class="svc-step">
+          <div class="svc-step-num">04</div>
+          <div class="svc-step-content">
+            <h3>Mediation</h3>
+            <p>A mediator from the Ministry of Business, Innovation and Employment facilitates a confidential discussion between both parties. Most cases settle here.</p>
+          </div>
+        </div>
+
+        <div class="svc-step">
+          <div class="svc-step-num">05</div>
+          <div class="svc-step-content">
+            <h3>Authority hearing</h3>
+            <p>If mediation is unsuccessful, the case proceeds to the Employment Relations Authority for a formal determination.</p>
+          </div>
+        </div>
+
+        <div class="svc-step">
+          <div class="svc-step-num">06</div>
+          <div class="svc-step-content">
+            <h3>Resolution</h3>
+            <p>Whether through settlement or a formal decision, we work to achieve the best possible outcome for you.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       RESTRICTIONS & DISQUALIFIERS
+  ============================= -->
+  <section class="svc-section svc-restrictions">
+    <div class="svc-section-inner">
+      <div class="svc-text">
+        <span class="section-label">Before you proceed</span>
+        <h2>Restrictions &amp; disqualifiers</h2>
+        <p>While we encourage anyone who believes they've been unfairly dismissed to seek advice, there are some situations where a personal grievance claim may not be available or may be more difficult to pursue.</p>
+      </div>
+      <div class="svc-restrict-grid">
+
+        <div class="svc-restrict-card svc-restrict-card--warn">
+          <h3>90 day time limit</h3>
+          <p>You must raise your personal grievance within 90 days of your dismissal. This deadline is strict and missing it will almost certainly end your claim.</p>
+        </div>
+
+        <div class="svc-restrict-card svc-restrict-card--warn">
+          <h3>90 day trial periods</h3>
+          <p>If you were dismissed within a valid 90 day trial period, your ability to raise a personal grievance is significantly limited. However, the trial period must have been correctly set up to be valid.</p>
+        </div>
+
+        <div class="svc-restrict-card svc-restrict-card--warn">
+          <h3>Contractor vs employee</h3>
+          <p>Personal grievance rights apply to employees, not independent contractors. If you were engaged as a contractor, the rules are different — though we can still advise you on your options.</p>
+        </div>
+
+        <div class="svc-restrict-card svc-restrict-card--warn">
+          <h3>Genuine redundancy</h3>
+          <p>If your role was genuinely made redundant due to business restructuring, this may not constitute an unfair dismissal — though the process followed must still be fair.</p>
+        </div>
+
+        <div class="svc-restrict-card svc-restrict-card--warn">
+          <h3>Serious misconduct</h3>
+          <p>If you were dismissed for serious misconduct that was proven and handled correctly, it may be difficult to succeed with a grievance claim.</p>
+        </div>
+
+        <div class="svc-restrict-card svc-restrict-card--info">
+          <h3>Not sure if you qualify?</h3>
+          <p>Don't rule yourself out before speaking to us. Many cases that seem straightforward are more complex on closer inspection — in both directions. Get in touch for a free assessment.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CONTACT FORM
+  ============================= -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <span class="section-label">Get in touch</span>
+        <h2>Ready to take the next step?</h2>
+        <p>Don't wait — the 90 day deadline moves quickly. Get in touch today for a free, no obligation consultation with our team.</p>
+        <div class="contact-detail">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 11.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 18z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span>Phone</span>
+              <a href="tel:<%- site.phoneTel %>"><%- site.phone %></a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span>Email</span>
+              <a href="mailto:<%- site.email %>"><%- site.email %></a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span>Address</span>
+              <p><%- site.address %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div id="form-success" class="form-message form-message--success" style="display:none;">
+          Thank you! Your message has been sent. We will be in touch shortly.
+        </div>
+        <div id="form-error" class="form-message form-message--error" style="display:none;">
+          Something went wrong. Please try again or call us directly.
+        </div>
+        <form id="contact-form" novalidate>
+          <input type="hidden" name="service" value="Unfair Dismissal">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="lname" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="021 000 0000">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your situation..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="form-btn">Send enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <%- include('../partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
