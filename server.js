@@ -11,7 +11,6 @@ const generateSitemap = require('./dev_tools/sitemap-gen');
 const websiteRoot = path.resolve(__dirname);
 const baseUrl = 'https://example.com';
 const outputPath = path.join(websiteRoot, 'sitemap.xml');
-
 // Run on server start
 generateSitemap(websiteRoot, baseUrl, outputPath);
 
