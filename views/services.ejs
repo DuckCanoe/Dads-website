@@ -1,0 +1,80 @@
+<div class="services-container">
+  <h1>Our Services</h1>
+  
+  <div class="services-overview">
+    <p class="intro-text">We offer a comprehensive range of services designed to meet your needs.</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <h2>Service 1</h2>
+        <p>Description of the first service offering and benefits.</p>
+      </div>
+      
+      <div class="service-card">
+        <h2>Service 2</h2>
+        <p>Description of the second service offering and benefits.</p>
+      </div>
+      
+      <div class="service-card">
+        <h2>Service 3</h2>
+        <p>Description of the third service offering and benefits.</p>
+      </div>
+      
+      <div class="service-card">
+        <h2>Service 4</h2>
+        <p>Description of the fourth service offering and benefits.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .services-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
+  
+  .intro-text {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-card {
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    color: #555;
+    line-height: 1.6;
+  }
+</style>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — <%- site.businessName %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="hero-tag">Who we are</span>
+      <h1>About <%- site.businessName %></h1>
+      <p>We are employment lawyers dedicated to protecting your rights and helping you achieve fair outcomes in the workplace.</p>
+    </div>
+  </section>
+
+  <!-- MISSION & APPROACH -->
+  <section class="about">
+    <div class="about-inner">
+      <div class="about-image">
+        <span>Photo placeholder</span>
+      </div>
+      <div class="about-content">
+        <span class="section-label">Our mission</span>
+        <h2>Fighting for fair outcomes</h2>
+        <p>Employment disputes can be stressful, confusing, and emotionally draining. Whether you've been unfairly dismissed, harassed, or subjected to unsafe working conditions, you deserve support from someone who understands employment law inside and out.</p>
+        <p>At <%- site.businessName %>, we believe everyone has the right to fair treatment at work. We combine deep legal expertise with genuine empathy to help you navigate complex employment issues and achieve the best possible outcome.</p>
+        <p>We don't just provide legal advice — we're here to support you every step of the way, from your first consultation through to resolution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="svc-section svc-help" style="padding: 96px 48px; background: var(--cream);">
+    <div class="svc-section-inner svc-section-inner--centered">
+      <div class="svc-section-header">
+        <span class="section-label">Why choose us</span>
+        <h2>What sets us apart</h2>
+        <p>We bring expertise, integrity, and genuine care to every case we take on.</p>
+      </div>
+      <div class="svc-help-grid">
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/></svg>
+          </div>
+          <h3>Deep expertise</h3>
+          <p>Our team specialises in employment law and understands the nuances of New Zealand's legal framework.</p>
+        </div>
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h3>Client-focused</h3>
+          <p>We listen to your story, understand your concerns, and tailor our approach to your unique situation.</p>
+        </div>
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Transparent communication</h3>
+          <p>We keep you informed at every stage and explain your options in clear, straightforward language.</p>
+        </div>
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3>Proven results</h3>
+          <p>We have a strong track record of achieving favorable settlements and awards for our clients.</p>
+        </div>
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 11.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 18z"/></svg>
+          </div>
+          <h3>Accessible support</h3>
+          <p>We offer flexible consultation options and work to make legal representation accessible to everyone.</p>
+        </div>
+        <div class="svc-help-card">
+          <div class="svc-help-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Confidentiality</h3>
+          <p>Your privacy is paramount. We handle all matters with the utmost discretion and professionalism.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PROCESS -->
+  <section style="padding: 96px 48px; background: var(--white);">
+    <div class="svc-section-inner svc-section-inner--centered">
+      <div class="svc-section-header">
+        <span class="section-label">How we work</span>
+        <h2>Our approach to your case</h2>
+        <p>We follow a structured, proven process that maximizes your chances of a successful outcome.</p>
+      </div>
+      <div class="svc-steps">
+        <div class="svc-step">
+          <div class="svc-step-num">01</div>
+          <div class="svc-step-content">
+            <h3>Initial consultation</h3>
+            <p>We listen to your situation without judgment and provide an honest assessment of your case and options.</p>
+          </div>
+        </div>
+        <div class="svc-step">
+          <div class="svc-step-num">02</div>
+          <div class="svc-step-content">
+            <h3>Case evaluation</h3>
+            <p>We gather evidence, review documentation, and develop a comprehensive strategy tailored to your circumstances.</p>
+          </div>
+        </div>
+        <div class="svc-step">
+          <div class="svc-step-num">03</div>
+          <div class="svc-step-content">
+            <h3>Resolution planning</h3>
+            <p>We explore all available options — from negotiation to formal proceedings — and advise you on the best path forward.</p>
+          </div>
+        </div>
+        <div class="svc-step">
+          <div class="svc-step-num">04</div>
+          <div class="svc-step-content">
+            <h3>Active representation</h3>
+            <p>We handle communications with your employer, represent you in mediation, and advocate for you at tribunal if needed.</p>
+          </div>
+        </div>
+        <div class="svc-step">
+          <div class="svc-step-num">05</div>
+          <div class="svc-step-content">
+            <h3>Ongoing support</h3>
+            <p>We keep you informed throughout and answer your questions at every stage of the process.</p>
+          </div>
+        </div>
+        <div class="svc-step">
+          <div class="svc-step-num">06</div>
+          <div class="svc-step-content">
+            <h3>Resolution</h3>
+            <p>We work to achieve the best possible outcome, whether through settlement, mediation, or formal determination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="services">
+    <div class="services-inner">
+      <div class="section-header">
+        <span class="section-label">What we handle</span>
+        <h2>Our areas of practice</h2>
+        <p>We specialise in all forms of employment law disputes, from dismissal to discrimination.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3>Unfair Dismissal</h3>
+          <p>If you've been dismissed without just cause or fair process, we can help you pursue a personal grievance claim.</p>
+          <a href="/services/unfair-dismissal" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Sexual Harassment</h3>
+          <p>Sexual harassment in the workplace is unlawful. We help you take action with sensitivity and discretion.</p>
+          <a href="/services/sexual-harassment" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Workplace Bullying</h3>
+          <p>No one should tolerate workplace bullying. We help you address harmful behaviour and protect your wellbeing.</p>
+          <a href="/services/workplace-bullying" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <h3>Redundancy</h3>
+          <p>If you've been made redundant, we ensure the process was fair and that you received all entitlements.</p>
+          <a href="/services/redundancy" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <h3>Disciplinary Process</h3>
+          <p>We help you navigate disciplinary meetings and ensure your rights are protected throughout the process.</p>
+          <a href="/services/disciplinary-meeting" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 11.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 18z"/></svg></div>
+          <h3>Unpaid Wages</h3>
+          <p>If you haven't been paid for work you've done, we can help you recover what you're owed.</p>
+          <a href="/services/unpaid-wages" class="service-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="padding: 96px 48px; background: var(--navy); color: var(--white);">
+    <div class="svc-section-inner svc-section-inner--centered">
+      <div class="svc-section-header" style="text-align: center;">
+        <h2 style="color: var(--white); margin-bottom: 24px;">Ready to take the next step?</h2>
+        <p style="color: rgba(255,255,255,0.65); max-width: 560px; margin: 0 auto 40px;">Get in touch with our team for a free, no obligation consultation. We're here to help you understand your rights and options.</p>
+        <a href="/contact" class="btn-primary">Contact us today</a>
+      </div>
+    </div>
+  </section>
+
+  <%- include('./partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="contact-form">
+    <div id="form-success" class="form-message blog-form-message--success" style="display:none;">
+    Post uploaded sucesfully.
+    </div>
+    <div id="form-error" class="form-message blog-form-message--error" style="display:none;">
+    Something went wrong. Please try again. If the problem persists contact Max.
+    </div>
+
+    <form id="new-blog-post" novalidate>
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="email" id="email" name="email" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="Photo">Photo</label>
+            <input type="file" id="photo" name="photo" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="post-body">Post</label>
+            <textarea id="post-body" name="post-body" placeholder="Start writing..." required></textarea>
+        </div>
+        <button type="submit" class="blog-form-submit" id="form-btn">Post</button>
+        </form>
+</div>

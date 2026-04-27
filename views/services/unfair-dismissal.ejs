@@ -20,7 +20,7 @@
 
       <div class="svc-hero-content">
         <span class="hero-tag">Employment Law</span>
-        <h1>Unfair Dismissal</h1>
+        <h1>Unfair <em>Dismissal</em></h1>
         <p>If you've been dismissed from your job and believe it was unjustified, you may have grounds for a personal grievance. We can help you understand your rights and take action.</p>
         <ul class="svc-hero-bullets">
           <li>Free initial consultation</li>
@@ -31,32 +31,7 @@
 
       <div class="svc-hero-form">
         <p class="form-intro">Get free advice today</p>
-        <div id="hero-form-success" class="form-message form-message--success" style="display:none;">
-          Thank you! We will be in touch shortly.
-        </div>
-        <div id="hero-form-error" class="form-message form-message--error" style="display:none;">
-          Something went wrong. Please try again.
-        </div>
-        <form id="hero-contact-form" novalidate>
-          <input type="hidden" name="service" value="Unfair Dismissal">
-          <div class="form-group">
-            <label for="h-fname">First name</label>
-            <input type="text" id="h-fname" name="fname" placeholder="Jane" required>
-          </div>
-          <div class="form-group">
-            <label for="h-email">Email address</label>
-            <input type="email" id="h-email" name="email" placeholder="jane@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="h-phone">Phone number</label>
-            <input type="tel" id="h-phone" name="phone" placeholder="021 000 0000">
-          </div>
-          <div class="form-group">
-            <label for="h-message">Briefly describe your situation</label>
-            <textarea id="h-message" name="message" rows="3" placeholder="What happened and when..." required></textarea>
-          </div>
-          <button type="submit" class="form-submit" id="hero-form-btn">Get free advice</button>
-        </form>
+        <%- include("../partials/contact-form.ejs") %>
       </div>
 
     </div>

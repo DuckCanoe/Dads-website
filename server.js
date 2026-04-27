@@ -43,25 +43,24 @@ const site = {
    to every render call so the header can
    highlight the active nav link
 ============================================ */
-app.get('/', (req, res) => {
-  res.render('index', { site, page: 'home' });
-});
+app.get('/', (req, res) => {res.render('index', { site, page: 'home' });});
+app.get('/contact', (req, res) => {res.render('contact', { site, page: 'contact' });});
+app.get('/about', (req, res) => {res.render('about', { site, page: 'about' });});
+app.get('/services', (req, res) => {res.render('services', { site, page: 'services' });});
+app.get('/articles', (req, res) => {res.render('articles', { site, page: 'articles' });});
+app.get('/articles/create-article', (req, res) => {res.render('articles/create-article', { site, page: 'articles' });});
 
-app.get('/contact', (req, res) => {
-  res.render('contact', { site, page: 'contact' });
-});
-
-app.get('/about', (req, res) => {
-  res.render('about', { site, page: 'about' });
-});
-
-app.get('/services/boilerplate', (req, res) => {
-  res.render('services/boilerplate', { site, page: 'boilerplate' });
-});
-
-app.get('/services/unfair-dismissal', (req, res) => {
-  res.render('services/unfair-dismissal', { site, page: 'unfair-dismissal' });
-});
+app.get('/services/unfair-dismissal',        (req, res) => res.render('services/unfair-dismissal',        { site, page: 'services' }));
+app.get('/services/disciplinary-meeting',    (req, res) => res.render('services/disciplinary-meeting',    { site, page: 'services' }));
+app.get('/services/90-day-trial-dismissal',  (req, res) => res.render('services/90-day-trial-dismissal',  { site, page: 'services' }));
+app.get('/services/redundancy',              (req, res) => res.render('services/redundancy',              { site, page: 'services' }));
+app.get('/services/workplace-bullying',      (req, res) => res.render('services/workplace-bullying',      { site, page: 'services' }));
+app.get('/services/sexual-harassment',       (req, res) => res.render('services/sexual-harassment',       { site, page: 'services' }));
+app.get('/services/medical-termination',     (req, res) => res.render('services/medical-termination',     { site, page: 'services' }));
+app.get('/services/unpaid-wages',            (req, res) => res.render('services/unpaid-wages',            { site, page: 'services' }));
+app.get('/services/migrant-exploitation',    (req, res) => res.render('services/migrant-exploitation',    { site, page: 'services' }));
+app.get('/services/personal-grievance',      (req, res) => res.render('services/personal-grievance',      { site, page: 'services' }));
+app.get('/services/exit-packages',           (req, res) => res.render('services/exit-packages',           { site, page: 'services' }));
 
 // Add more pages as you build them:
 // app.get('/about',    (req, res) => res.render('about',    { site, page: 'about' }));
