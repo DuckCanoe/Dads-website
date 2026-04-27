@@ -5,10 +5,19 @@
    - Handles POST /contact and sends email
 ============================================ */
 
+/* --- Run sitemap-gen.js in a separate process --- */
+const path = require('path');
+const generateSitemap = require('./dev_tools/sitemap-gen');
+const websiteRoot = path.resolve(__dirname);
+const baseUrl = 'https://example.com';
+const outputPath = path.join(websiteRoot, 'sitemap.xml');
+
+// Run on server start
+generateSitemap(websiteRoot, baseUrl, outputPath);
+
 require('dotenv').config();
 const express    = require('express');
 const nodemailer = require('nodemailer');
-const path       = require('path');
 
 const app  = express();
 const PORT = process.env.PORT || 3000;
