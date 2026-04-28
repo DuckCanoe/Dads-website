@@ -1,0 +1,331 @@
+/* ============================================
+   BCG LAW — fees-page.css
+   Styles for the /fees page
+============================================ */
+
+.fees-section {
+  padding: 96px 48px;
+  background: var(--white);
+}
+
+.fees-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fees-intro h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: var(--navy);
+}
+
+.fees-intro p {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.85;
+  max-width: 640px;
+}
+
+/* === FEE STRUCTURE === */
+.fees-structure {
+  padding: 96px 48px;
+  background: var(--cream);
+}
+
+.fees-structure .fees-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.fee-option {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fee-option:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.fee-option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.fee-option h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.fee-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--navy);
+  padding: 6px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fee-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.fee-price span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
+
+.fee-description {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.fee-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fee-details li {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.fee-details li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+.fee-details li:last-child {
+  margin-bottom: 0;
+}
+
+/* === WHAT'S INCLUDED === */
+.fees-included {
+  padding: 96px 48px;
+  background: var(--white);
+}
+
+.fees-included h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.included-item {
+  text-align: center;
+}
+
+.included-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.included-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--navy);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.included-item h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 10px;
+}
+
+.included-item p {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* === FAQ === */
+.fees-faq {
+  padding: 96px 48px;
+  background: var(--cream);
+}
+
+.fees-faq h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 12px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* === CONTACT CTA === */
+.fees-contact {
+  background: var(--navy);
+  padding: 96px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fees-contact::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 154, 90, 0.1);
+}
+
+.fees-contact-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.fees-contact-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  color: var(--white);
+  margin: 12px 0 24px;
+  line-height: 1.2;
+}
+
+.fees-contact-inner p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .fees-section,
+  .fees-structure,
+  .fees-included,
+  .fees-faq,
+  .fees-contact {
+    padding: 72px 24px;
+  }
+
+  .fees-structure .fees-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .included-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .fee-option-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .fee-badge {
+    align-self: flex-start;
+  }
+
+  .included-item {
+    text-align: left;
+  }
+
+  .included-icon {
+    margin: 0 0 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .included-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-price {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,156 @@
+/* ============================================
+   BCG LAW — services-page.css
+   Styles for the /services overview page
+============================================ */
+
+.services-overview {
+  padding: 96px 48px;
+  background: var(--white);
+}
+
+.services-overview-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.service-item {
+  background: var(--cream);
+  padding: 40px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.service-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.service-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--navy);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.service-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--navy);
+  padding: 6px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.service-item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0 0 20px 0;
+}
+
+.service-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-link:hover {
+  color: var(--gold);
+}
+
+/* === CTA SECTION === */
+.services-cta {
+  background: var(--navy);
+  padding: 96px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-cta::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 154, 90, 0.1);
+}
+
+.services-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  color: var(--white);
+  margin: 12px 0 24px;
+  line-height: 1.2;
+}
+
+.services-cta-inner p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .services-overview {
+    padding: 72px 24px;
+  }
+
+  .services-overview-inner {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .services-cta {
+    padding: 72px 24px;
+  }
+
+  .service-item-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service-item h3 {
+    font-size: 20px;
+  }
+
+  .service-tag {
+    align-self: flex-start;
+  }
+}

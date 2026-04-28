@@ -1,80 +1,144 @@
-<div class="services-container">
-  <h1>Our Services</h1>
-  
-  <div class="services-overview">
-    <p class="intro-text">We offer a comprehensive range of services designed to meet your needs.</p>
-    
-    <div class="services-grid">
-      <div class="service-card">
-        <h2>Service 1</h2>
-        <p>Description of the first service offering and benefits.</p>
-      </div>
-      
-      <div class="service-card">
-        <h2>Service 2</h2>
-        <p>Description of the second service offering and benefits.</p>
-      </div>
-      
-      <div class="service-card">
-        <h2>Service 3</h2>
-        <p>Description of the third service offering and benefits.</p>
-      </div>
-      
-      <div class="service-card">
-        <h2>Service 4</h2>
-        <p>Description of the fourth service offering and benefits.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — <%- site.businessName %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/services-page.css">
+</head>
+<body>
 
-<style>
-  .services-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  
-  .services-container h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-  }
-  
-  .intro-text {
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 40px;
-    color: #666;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-  
-  .service-card {
-    padding: 25px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service-card h2 {
-    margin-top: 0;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .service-card p {
-    color: #555;
-    line-height: 1.6;
-  }
-</style>
+  <%- include('partials/header') %>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label">Employment Law Services</span>
+      <h1>What we do</h1>
+      <p>We specialise in employment law and provide expert advice across a broad range of workplace issues. Whether you're facing dismissal, dispute, or discrimination, we're here to help.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="services-overview">
+    <div class="services-overview-inner">
+      
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Unfair Dismissal</h3>
+          <span class="service-tag">Dismissal</span>
+        </div>
+        <p>If you've been dismissed and believe it was unjustified, you may have grounds for a personal grievance. We can help you understand your rights and take action.</p>
+        <a href="/services/unfair-dismissal" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Disciplinary Meeting</h3>
+          <span class="service-tag">Workplace Issues</span>
+        </div>
+        <p>Facing a disciplinary meeting can be stressful. Knowing your rights before you walk in the door can make all the difference. We can prepare you or attend with you.</p>
+        <a href="/services/disciplinary-meeting" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>90 Day Trial Dismissal</h3>
+          <span class="service-tag">Dismissal</span>
+        </div>
+        <p>Being dismissed under a 90 day trial period doesn't always mean your employer acted lawfully. A trial period must meet strict legal requirements to be valid.</p>
+        <a href="/services/90-day-trial-dismissal" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Redundancy</h3>
+          <span class="service-tag">Dismissal</span>
+        </div>
+        <p>Redundancy must be genuine. If your employer used restructuring as a pretext to get rid of you, or failed to follow a fair process, you may have a strong claim.</p>
+        <a href="/services/redundancy" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Workplace Bullying</h3>
+          <span class="service-tag">Harassment</span>
+        </div>
+        <p>Workplace bullying is serious, damaging, and unlawful. You don't have to endure it. We can help you take action and hold your employer accountable.</p>
+        <a href="/services/workplace-bullying" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Sexual Harassment</h3>
+          <span class="service-tag">Harassment</span>
+        </div>
+        <p>Sexual harassment in the workplace is unlawful and deeply harmful. You have the right to work in an environment free from this behaviour. We handle every case with sensitivity.</p>
+        <a href="/services/sexual-harassment" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Medical Termination</h3>
+          <span class="service-tag">Dismissal</span>
+        </div>
+        <p>Being dismissed because of a medical condition or illness is difficult. In many cases it is also unlawful. We help you understand your rights and take action.</p>
+        <a href="/services/medical-termination" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Unpaid Wages</h3>
+          <span class="service-tag">Pay & Conditions</span>
+        </div>
+        <p>If your employer has failed to pay you correctly — whether through withheld wages, unpaid overtime, or incorrect holiday pay — we can help you recover what you're owed.</p>
+        <a href="/services/unpaid-wages" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Migrant Exploitation</h3>
+          <span class="service-tag">Workers' Rights</span>
+        </div>
+        <p>Migrant workers are among the most vulnerable to exploitation. If you have been underpaid or mistreated because of your visa status, we can help you safely.</p>
+        <a href="/services/migrant-exploitation" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Personal Grievance</h3>
+          <span class="service-tag">Disputes</span>
+        </div>
+        <p>A personal grievance is the formal process for resolving employment disputes in New Zealand. If you've been treated unfairly at work, this may be the right tool.</p>
+        <a href="/services/personal-grievance" class="service-link">Learn more →</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-header">
+          <h3>Exit Packages</h3>
+          <span class="service-tag">Negotiations</span>
+        </div>
+        <p>When an employment relationship comes to an end, the terms of your exit can have a significant impact. We help you negotiate the best possible package.</p>
+        <a href="/services/exit-packages" class="service-link">Learn more →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="services-cta">
+    <div class="services-cta-inner">
+      <span class="section-label">Not sure which service you need?</span>
+      <h2>Get a free consultation</h2>
+      <p>Every employment situation is unique. Contact us today for a free, no obligation consultation. We'll listen to your situation and advise you on your options.</p>
+      <a href="/contact" class="btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

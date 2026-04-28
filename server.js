@@ -56,7 +56,8 @@ app.get('/contact', (req, res) => {res.render('contact', { site, page: 'contact'
 app.get('/about', (req, res) => {res.render('about', { site, page: 'about' });});
 app.get('/services', (req, res) => {res.render('services', { site, page: 'services' });});
 app.get('/articles', (req, res) => {res.render('articles', { site, page: 'articles' });});
-app.get('/articles/create-article', (req, res) => {res.render('articles/create-article', { site, page: 'articles' });});
+app.get('/fees', (req, res) => {res.render('fees', { site, page: 'fees' });});
+
 
 app.get('/services/unfair-dismissal',        (req, res) => res.render('services/unfair-dismissal',        { site, page: 'services' }));
 app.get('/services/disciplinary-meeting',    (req, res) => res.render('services/disciplinary-meeting',    { site, page: 'services' }));

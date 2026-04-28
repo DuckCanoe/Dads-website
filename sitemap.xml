@@ -4,7 +4,7 @@
     <loc>https://example.com/views/about.ejs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-04-27T04:55:19Z</lastmod>
+    <lastmod>2026-04-27T12:29:02Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/views/articles.ejs</loc>
@@ -16,7 +16,7 @@
     <loc>https://example.com/views/contact.ejs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-04-23T02:35:31Z</lastmod>
+    <lastmod>2026-04-27T12:29:49Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/views/fees.ejs</loc>
@@ -106,7 +106,7 @@
     <loc>https://example.com/views/services.ejs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-04-27T06:44:18Z</lastmod>
+    <lastmod>2026-04-27T23:53:02Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/views/terms.ejs</loc>
