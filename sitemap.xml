@@ -22,13 +22,19 @@
     <loc>https://example.com/views/fees.ejs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
-    <lastmod>2026-04-28T01:49:35Z</lastmod>
+    <lastmod>2026-04-28T01:54:56Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/views/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-04-23T02:29:00Z</lastmod>
+    <lastmod>2026-04-28T08:19:04Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/views/inedx2.ejs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-04-28T08:30:08Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/views/privacy.ejs</loc>
