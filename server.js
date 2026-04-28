@@ -1,9 +1,12 @@
-/* ============================================
-   BCG LAW — server.js
-   - Serves EJS views with shared partials
-   - Site config passed to every page
-   - Handles POST /contact and sends email
-============================================ */
+/* --- Site-wide variables --- */
+const site = {
+  businessName: 'BCG Law',
+  phone:        '0800 83 83 83',
+  phoneTel:     '0800838383',
+  email:        'info@bcglaw.co.nz',
+  hourlyRate:   205,
+  year:         new Date().getFullYear()
+};
 
 /* --- Run sitemap-gen.js in a separate process --- */
 const path = require('path');
@@ -14,10 +17,12 @@ const outputPath = path.join(websiteRoot, 'sitemap.xml');
 // Run on server start
 generateSitemap(websiteRoot, baseUrl, outputPath);
 
+/* --- Express server setup --- */
 require('dotenv').config();
 const express    = require('express');
 const nodemailer = require('nodemailer');
 
+/* --- Create Express app --- */
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
@@ -32,32 +37,13 @@ app.use(express.static(path.join(__dirname)));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-/* ============================================
-   SITE CONFIG
-   Update values here — they flow through to
-   every page and every partial automatically
-============================================ */
-const site = {
-  businessName: 'BCG Law',
-  phone:        '0800 83 83 83',
-  phoneTel:     '0800838383',
-  email:        'info@bcglaw.co.nz',
-  year:         new Date().getFullYear()
-};
-
-/* ============================================
-   PAGE ROUTES
-   Add new pages here — pass { site, page }
-   to every render call so the header can
-   highlight the active nav link
-============================================ */
+/* --- Routes --- */
 app.get('/', (req, res) => {res.render('index', { site, page: 'home' });});
 app.get('/contact', (req, res) => {res.render('contact', { site, page: 'contact' });});
 app.get('/about', (req, res) => {res.render('about', { site, page: 'about' });});
 app.get('/services', (req, res) => {res.render('services', { site, page: 'services' });});
 app.get('/articles', (req, res) => {res.render('articles', { site, page: 'articles' });});
 app.get('/fees', (req, res) => {res.render('fees', { site, page: 'fees' });});
-
 
 app.get('/services/unfair-dismissal',        (req, res) => res.render('services/unfair-dismissal',        { site, page: 'services' }));
 app.get('/services/disciplinary-meeting',    (req, res) => res.render('services/disciplinary-meeting',    { site, page: 'services' }));
@@ -71,14 +57,7 @@ app.get('/services/migrant-exploitation',    (req, res) => res.render('services/
 app.get('/services/personal-grievance',      (req, res) => res.render('services/personal-grievance',      { site, page: 'services' }));
 app.get('/services/exit-packages',           (req, res) => res.render('services/exit-packages',           { site, page: 'services' }));
 
-// Add more pages as you build them:
-// app.get('/about',    (req, res) => res.render('about',    { site, page: 'about' }));
-// app.get('/services', (req, res) => res.render('services', { site, page: 'services' }));
-// app.get('/fees',     (req, res) => res.render('fees',     { site, page: 'fees' }));
-
-/* ============================================
-   CONTACT FORM — POST /contact
-============================================ */
+/* --- Contact form handling --- */
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,

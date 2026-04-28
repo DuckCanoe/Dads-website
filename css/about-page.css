@@ -1,0 +1,332 @@
+/* ============================================
+   BCG LAW — about-page.css
+   Styles for the /about page
+============================================ */
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === MISSION & VALUES === */
+.about-mission {
+  padding: 96px 48px;
+  background: var(--white);
+}
+
+.about-mission .about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-content h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.about-content p {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.value-card {
+  background: var(--cream);
+  padding: 28px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.value-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 10px;
+}
+
+.value-card p {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* === WHY CHOOSE US === */
+.about-why {
+  padding: 96px 48px;
+  background: var(--cream);
+}
+
+.about-why .about-inner {
+  display: block;
+}
+
+.about-why h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.why-item {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.why-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--cream);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.why-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--navy);
+}
+
+.why-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 12px;
+}
+
+.why-item p {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* === EXPERIENCE === */
+.about-experience {
+  padding: 96px 48px;
+  background: var(--white);
+}
+
+.about-experience .about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.experience-content h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.experience-content p {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.experience-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.stat {
+  text-align: center;
+  padding: 32px 24px;
+  background: var(--cream);
+  border-radius: 6px;
+}
+
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* === APPROACH === */
+.about-approach {
+  padding: 96px 48px;
+  background: var(--cream);
+}
+
+.about-approach h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-top: 12px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.approach-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.approach-step {
+  background: var(--white);
+  padding: 40px;
+  position: relative;
+}
+
+.approach-step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: var(--gold);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.approach-step-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 12px;
+}
+
+.approach-step-content p {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* === CONTACT CTA === */
+.about-contact {
+  background: var(--navy);
+  padding: 96px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-contact::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 154, 90, 0.1);
+}
+
+.about-contact-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-contact-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  color: var(--white);
+  margin: 12px 0 24px;
+  line-height: 1.2;
+}
+
+.about-contact-inner p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .about-mission,
+  .about-why,
+  .about-experience,
+  .about-approach,
+  .about-contact {
+    padding: 72px 24px;
+  }
+
+  .about-mission .about-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-experience .about-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .approach-steps {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .experience-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .why-item {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .stat-num {
+    font-size: 36px;
+  }
+
+  .approach-step-num {
+    font-size: 42px;
+  }
+}
