@@ -27,9 +27,6 @@ app.locals.site = {
 /* routes */
 app.use('/', require('./routes/pages'));
 app.use('/services', require('./routes/services'));
-app.use((req, res) => {
-    res.status(404).render("404");
-});
 
 /* contact route (keep here for now) */
 const { Resend } = require('resend');
