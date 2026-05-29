@@ -54,7 +54,8 @@ app.post('/contact', async (req, res) => {
     `
   });
 
-  res.json({ success: true });
+  res.json({ success: true }); 
+  console.log("Form submission")
 });
 
 module.exports = app;
