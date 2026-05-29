@@ -78,8 +78,6 @@ a { color: inherit; }
 .logo-circle {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  border: 2px solid var(--navy);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -884,6 +882,10 @@ a { color: inherit; }
 .dropdown-toggle.open span { transform: rotate(-135deg); }
 
 .nav-phone-mobile { display: none; }
+
+.spacing {
+  background-color: var(--cream);
+}
 
 /* === 12. RESPONSIVE === */
 @media (max-width: 900px) {

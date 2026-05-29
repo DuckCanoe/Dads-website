@@ -1,0 +1,31 @@
+const express = require('express');
+const router = express.Router();
+
+const routes = {
+  '/': 'index',
+  '/contact': 'contact',
+  '/about': 'about',
+  '/services': 'services',
+  '/articles': 'articles',
+  '/fees': 'fees',
+  '/privacy': 'privacy',
+  '/terms': 'terms'
+};
+
+router.get('/', (req, res) => {
+  res.render('index', {
+    site: req.app.locals.site,
+    page: 'home'
+  });
+});
+
+Object.entries(routes).forEach(([path, view]) => {
+  router.get(path, (req, res) => {
+    res.render(view, {
+      site: req.app.locals.site,
+      page: view
+    });
+  });
+});
+
+module.exports = router;

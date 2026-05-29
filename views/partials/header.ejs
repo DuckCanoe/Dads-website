@@ -1,10 +1,9 @@
 <header class="header">
   <div class="header-inner">
 
-    <div class="logo-circle" href="/">
-      <!-- Replace with: <img src="/images/logo.png" alt="BCG Law logo"> -->
-      Logo
-    </div>
+    <a class="logo-circle" href="/">
+      <img src="/images/logo.png" alt="BCG Law logo">
+    </a>
 
     <a class="site-title" href="/"><%- site.businessName %></a>
 
@@ -30,27 +29,27 @@
             <li><a href="/services/90-day-trial-dismissal">90 Day Trial Dismissal</a></li>
             <li><a href="/services/redundancy">Redundancy</a></li>
             <li><a href="/services/workplace-bullying">Workplace Bullying</a></li>
-            <li><a href="/services/sexual-harasment">Sexual Harasment</a></li>
+            <li><a href="/services/sexual-harassment">Sexual Harassment</a></li>
             <li><a href="/services/medical-termination">Medical Termination</a></li>
             <li><a href="/services/unpaid-wages">Unpaid Wages</a></li>
             <li><a href="/services/migrant-exploitation">Migrant Exploitation</a></li>
-            <li><a href="/services/personal-greivance">Personal Greivance</a></li>
+            <li><a href="/services/personal-grievance">Personal Grievance</a></li>
             <li><a href="/services/exit-packages">Exit Packages</a></li>
           </ul>
         </li>
 
         <li><a href="/contact" <%= page === 'contact' ? 'class="active"' : '' %>>Contact</a></li>
         <li><a href="/fees" <%= page === 'fees' ? 'class="active"' : '' %>>Fees</a></li>
-        <li><a href="/articles" <%= page === 'articles' ? 'class="active"' : '' %>>Blog</a></li>
+        <li><a href="/articles" <%= page === 'articles' ? 'class="active"' : '' %>>Articles</a></li>
 
         <!-- Phone number shown in mobile menu -->
         <li class="nav-phone-mobile">
-          <a href="tel:<%- site.phoneTel %>">Ph: <%- site.phone %></a>
+          <a href="tel:<%- site.phone %>">Ph: <%- site.phone %></a>
         </li>
       </ul>
     </nav>
 
-    <a class="header-phone" href="tel:<%- site.phoneTel %>">Ph: <%- site.phone %></a>
+    <a class="header-phone" href="tel:<%- site.phone %>">Ph: <%- site.phone %></a>
 
   </div>
 </header>

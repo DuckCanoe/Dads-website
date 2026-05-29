@@ -1,0 +1,27 @@
+const express = require('express');
+const router = express.Router();
+
+const services = [
+  'unfair-dismissal',
+  'disciplinary-meeting',
+  '90-day-trial-dismissal',
+  'redundancy',
+  'workplace-bullying',
+  'sexual-harassment',
+  'medical-termination',
+  'unpaid-wages',
+  'migrant-exploitation',
+  'personal-grievance',
+  'exit-packages'
+];
+
+services.forEach((page) => {
+  router.get(`/${page}`, (req, res) => {
+    res.render(`services/${page}`, {
+      site: req.app.locals.site,
+      page: 'services'
+    });
+  });
+});
+
+module.exports = router;

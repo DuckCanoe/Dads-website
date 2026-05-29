@@ -17,7 +17,7 @@
     <div class="page-hero-inner">
       <span class="section-label">Our Story</span>
       <h1>About <%- site.businessName %></h1>
-      <p>We're a team of employment lawyers dedicated to helping people understand and enforce their workplace rights.</p>
+      <p>We're a team of employment law specialists dedicated to helping people understand and enforce their workplace rights.</p>
     </div>
   </section>
 
@@ -128,7 +128,7 @@
           <div class="stat-label">Employment disputes resolved</div>
         </div>
         <div class="stat">
-          <div class="stat-num">$5M+</div>
+          <div class="stat-num">$1M+</div>
           <div class="stat-label">Recovered for clients</div>
         </div>
         <div class="stat">
@@ -202,9 +202,14 @@
       <span class="section-label">Ready to get started?</span>
       <h2>Let's talk about your situation</h2>
       <p>Your first consultation is free and comes with no obligation. We'll listen to your situation, explain your rights, and tell you what we can do to help.</p>
-      <a href="/contact" class="btn-primary">Get in touch</a>
+      <%- include("partials/contact-form") %>
     </div>
   </section>
+
+  <section>
+    <div class="spacing"><br><br><br><br></div>
+  </section>
+
 
   <%- include('partials/footer') %>
 

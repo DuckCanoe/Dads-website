@@ -4,6 +4,7 @@
 ============================================ */
 
 .about-inner {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -199,7 +200,12 @@
   text-align: center;
 }
 
+.about-approach .about-inner {
+  display: block;
+}
+
 .approach-steps {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
@@ -279,6 +285,10 @@
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.8;
   margin-bottom: 32px;
+}
+
+.spacing {
+  background-color: var(--cream);
 }
 
 /* === RESPONSIVE === */

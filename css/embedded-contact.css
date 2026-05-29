@@ -1,0 +1,49 @@
+/* === CONTACT CTA === */
+.about-contact {
+  background: var(--navy);
+  padding: 96px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-contact::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 154, 90, 0.1);
+}
+
+.about-contact-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-contact-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  color: var(--white);
+  margin: 12px 0 24px;
+  line-height: 1.2;
+}
+
+.about-contact-inner p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+  .about-contact {
+    padding: 72px 24px;
+  }
+}
