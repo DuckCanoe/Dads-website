@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
           errorEl.style.display = 'block';
         }
       } catch (err) {
-        console.error('Form submission error:', err);
+        console.log('Form submission error:', err);
         errorEl.textContent   = 'Could not connect to the server. Please call us directly on 0800 83 83 83.';
         errorEl.style.display = 'block';
       } finally {
