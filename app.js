@@ -19,7 +19,7 @@ app.locals.site = {
   businessName: process.env.NAME,
   phone: process.env.PHONE,
   email: process.env.EMAIL,
-  hourlyRate: 205,
+  hourlyRate: 150,
   year: new Date().getFullYear(),
   url: process.env.DOMAIN
 };
