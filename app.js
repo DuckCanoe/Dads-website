@@ -25,6 +25,7 @@ app.locals.site = {
 };
 
 /* routes */
+app.use('/preview', require('./routes/preview'));
 app.use('/', require('./routes/pages'));
 app.use('/services', require('./routes/services'));
 

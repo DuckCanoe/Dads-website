@@ -1,0 +1,112 @@
+
+/* Client-only website editing UI */
+#client-editor-toolbar {
+  position: fixed;
+  z-index: 2147483647;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  min-height: 58px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 14px;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,.97);
+  color: #222;
+  box-shadow: 0 8px 35px rgba(0,0,0,.18);
+  font-family: Arial, sans-serif;
+}
+
+#client-editor-toolbar .client-editor-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+#client-editor-toolbar .client-editor-title strong {
+  font-size: 14px;
+}
+
+#client-editor-toolbar .client-editor-title span,
+#client-editor-status {
+  font-size: 12px;
+  opacity: .7;
+}
+
+#client-editor-toolbar .client-editor-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+#client-editor-toolbar button {
+  border: 0;
+  border-radius: 6px;
+  padding: 9px 13px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#client-editor-save {
+  background: #222;
+  color: #fff;
+}
+
+#client-editor-reset {
+  background: #eee;
+  color: #222;
+}
+
+#client-editor-toolbar button:disabled {
+  opacity: .5;
+  cursor: wait;
+}
+
+.client-editable-text {
+  outline: 1px dashed transparent;
+  outline-offset: 2px;
+  border-radius: 2px;
+  cursor: text;
+  transition: outline-color .12s, background-color .12s;
+}
+
+.client-editable-text:hover {
+  outline-color: rgba(40, 100, 200, .28);
+  background: rgba(40, 100, 200, .04);
+}
+
+.client-editable-text.client-editing {
+  outline-color: rgba(40, 100, 200, .65);
+  background: rgba(40, 100, 200, .07);
+}
+
+.client-editable-text.client-changed {
+  outline-color: rgba(180, 120, 0, .55);
+}
+
+@media (max-width: 650px) {
+  #client-editor-toolbar {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #client-editor-toolbar .client-editor-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  #client-editor-status {
+    margin-right: auto;
+  }
+}
